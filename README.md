@@ -1,73 +1,136 @@
-# Welcome to your Lovable project
+# Suhaib Ahmad Siddiqui - Portfolio Website
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS, showcasing my journey as a Full-Stack Software Engineer.
 
-**URL**: https://lovable.dev/projects/765184e5-0e01-4be9-a38f-02d1dd03c7b1
+## 🚀 Live Demo
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **Modern Design**: Clean, professional UI with smooth animations and transitions
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Dark/Light Mode**: Toggle between dark and light themes
+- **Interactive Components**: Engaging user experience with modern UI components
+- **Performance Optimized**: Fast loading times and smooth interactions
+- **SEO Friendly**: Properly structured with meta tags for better search visibility
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/765184e5-0e01-4be9-a38f-02d1dd03c7b1) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend Framework**: React 18.3
+- **Language**: TypeScript 5.8
+- **Styling**: Tailwind CSS 3.4
+- **UI Components**: shadcn/ui + Radix UI
+- **Build Tool**: Vite 5.4
+- **Routing**: React Router 6.30
+- **Icons**: Lucide React
+- **Animations**: Tailwind CSS Animate
+- **Code Quality**: ESLint + TypeScript ESLint
 
-**Use your preferred IDE**
+## 📋 Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v18 or higher)
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🔧 Installation
 
-Follow these steps:
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd future-crafted-profile-flat
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+4. **Open your browser**
+   
+   Navigate to `http://localhost:8080` (or the port shown in your terminal)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 📜 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build in development mode
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 📁 Project Structure
+
+```
+src/
+├── components/        # Reusable UI components
+│   ├── ui/           # shadcn/ui components
+│   └── ...           # Custom components
+├── pages/            # Page components
+├── hooks/            # Custom React hooks
+├── lib/              # Utility functions
+├── styles/           # Global styles
+└── main.tsx          # Application entry point
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Customization
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Color Scheme
 
-**Use GitHub Codespaces**
+The color scheme can be customized in `tailwind.config.ts` under the `extend.colors` section.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Components
 
-## What technologies are used for this project?
+UI components are built using shadcn/ui and can be found in `src/components/ui/`. These are highly customizable and follow the Radix UI primitives.
 
-This project is built with:
+### Content
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Update your personal information, projects, and experience in the respective component files under `src/pages/` or `src/components/`.
 
-## How can I deploy this project?
+## 🚢 Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/765184e5-0e01-4be9-a38f-02d1dd03c7b1) and click on Share -> Publish.
+### Build for Production
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm run build
+```
 
-Yes, you can!
+This creates an optimized production build in the `dist/` folder.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Other Platforms
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The built files in `dist/` can be deployed to:
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+- Any static hosting service
+
+## 🔗 Custom Domain
+
+To connect a custom domain:
+1. Navigate to Project > Settings > Domains
+2. Click "Connect Domain"
+3. Follow the setup instructions
+
+## 🤝 Contributing
+
+This is a personal portfolio project, but suggestions and feedback are welcome! Feel free to open an issue or submit a pull request.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Suhaib Ahmad Siddiqui**
+- Email: sasidd11@asu.edu
+- LinkedIn: https://www.linkedin.com/in/suhaib28/
+- GitHub: https://github.com/Suhaib28
+
+---
+
+Made by Suhaib Ahmad Siddiqui
+```
