@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Futuristic dark theme with neon accents */
+    --background: 229 84% 5%;
+    --foreground: 190 100% 95%;
+
+    --card: 229 70% 8%;
+    --card-foreground: 190 100% 95%;
+
+    --popover: 229 70% 8%;
+    --popover-foreground: 190 100% 95%;
+
+    --primary: 190 100% 50%;
+    --primary-foreground: 229 84% 5%;
+
+    --secondary: 270 75% 60%;
+    --secondary-foreground: 190 100% 95%;
+
+    --muted: 229 50% 15%;
+    --muted-foreground: 190 50% 70%;
+
+    --accent: 270 75% 60%;
+    --accent-foreground: 190 100% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 229 50% 20%;
+    --input: 229 50% 15%;
+    --ring: 190 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(190 100% 50%), hsl(270 75% 60%));
+    --gradient-secondary: linear-gradient(180deg, hsl(229 84% 5%), hsl(229 70% 8%));
+    --gradient-glow: radial-gradient(circle at center, hsl(190 100% 50% / 0.15), transparent 70%);
+
+    /* Shadows */
+    --shadow-neon: 0 0 20px hsl(190 100% 50% / 0.5);
+    --shadow-glow: 0 10px 40px hsl(190 100% 50% / 0.3);
+    --shadow-card: 0 8px 32px hsl(229 84% 5% / 0.5);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 20%, hsl(190 100% 50% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(270 75% 60% / 0.05) 0%, transparent 50%);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+
+  .card-glass {
+    background: linear-gradient(135deg, hsl(229 70% 8% / 0.8), hsl(229 70% 8% / 0.4));
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border));
+  }
+
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+  }
+}
